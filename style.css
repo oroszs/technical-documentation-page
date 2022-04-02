@@ -6,7 +6,8 @@
     top: 0;
 }
 .main-header {
-    font-size: 20pt;
+    font-weight: bolder;
+    font-size: 25pt;
 }
 .main-section {
     background-color: lightgrey;
@@ -20,8 +21,26 @@
     margin-bottom: 50px;
     box-sizing: border-box;
 }
+h4{
+    padding-top: 25px;
+}
 code {
     background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+}
+.code-block{
+    display: block;
+    padding: 10px;
+}
+li {
+    list-style: none;
+}
+.styled-list {
+    font-size: .8em;
+}
+.styled-list > li {
+    padding: 10px;
+    list-style: inside;
 }
 #nav-header {
     font-size: 18pt;
