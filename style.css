@@ -17,9 +17,15 @@
     padding: 20px;
     float: right;
     font-size: 14pt;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     box-sizing: border-box;
+}
+#Asynchronous_JavaScript {
+    margin-top: 0px;
+}
+#Strings {
+    margin-bottom: 0px;
 }
 h4{
     padding-top: 25px;
@@ -48,6 +54,12 @@ li {
     padding: 10px;
     color: white;
     background-color: black;
+    margin: auto;
+    width: 100%;
+    position: relative;
+    height: 50px;
+    z-index: 5;
+    box-sizing: border-box;
 }
 #navbar {
     box-sizing: border-box;
@@ -56,9 +68,11 @@ li {
     width: 20%;
     height: 100%;
     background-color: rgb(109, 109, 109);
-    overflow-y: auto;
     color: black;
     font-size: 18pt;
+}
+#links {
+    overflow-y: auto;
 }
 .nav-link{
     text-align: center;
@@ -71,4 +85,20 @@ li {
     margin-bottom: 20px;
     color: white;
     font-size: 14pt;
+}
+@media screen and (max-width: 850px) {
+    .main-section {
+        width: 100%;
+        float: none;
+    }
+    #navbar {
+        float: none;
+        width: 100%;
+        height: 250px;
+        top: 0px;
+        position: relative;
+    }
+    #links {
+        height: 200px;
+    }
 }

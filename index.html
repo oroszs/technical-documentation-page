@@ -8,6 +8,16 @@
     </head>
     <body>
         <main id='main-doc'>
+            <nav id='navbar'>
+                <header id='nav-header'>JavaScript Concepts</header>
+                <div id='links'>
+                    <a class='nav-link' href='#Asynchronous_JavaScript'>Asynchronous JavaScript</a>
+                    <a class='nav-link' href='#Loops'>Loops</a>
+                    <a class='nav-link' href='#Arrays'>Arrays</a>
+                    <a class='nav-link' href='#Objects'>Objects</a>
+                    <a class='nav-link' href='#Strings'>Strings</a>
+                </div>
+            </nav>
             <section class='main-section' id='Asynchronous_JavaScript'>
                 <header class='main-header'>Asynchronous JavaScript</header>
                 <ul>
@@ -19,31 +29,29 @@
                             promise-based behavior to be written in a cleaner style, avoiding the need to explicitly configure
                             promise chains.
                         </p>
-                        <p>
-                            <ul>
-                                <li>
-                                    <h5>Sample Code:</h5>
-                                    <code class='code-block'>
-                                        function resolveAfter2Seconds() {<br>
-                                            return new Promise(resolve => {<br>
-                                            setTimeout(() => {<br>
-                                                resolve('resolved');<br>
-                                            }, 2000);<br>
-                                            });<br>
-                                        }<br>
-                                        <br>
-                                        async function asyncCall() {<br>
-                                            console.log('calling');<br>
-                                            const result = await resolveAfter2Seconds();<br>
-                                            console.log(result);<br>
-                                            // expected output: "resolved"<br>
-                                        }<br>
-                                        <br>
-                                        asyncCall();  <br>                        
-                                    </code>
-                                </li>
-                            </ul>
-                        </p>
+                        <ul>
+                            <li>
+                                <h5>Sample Code:</h5>
+                                <code class='code-block'>
+                                    function resolveAfter2Seconds() {<br>
+                                        return new Promise(resolve => {<br>
+                                        setTimeout(() => {<br>
+                                            resolve('resolved');<br>
+                                        }, 2000);<br>
+                                        });<br>
+                                    }<br>
+                                    <br>
+                                    async function asyncCall() {<br>
+                                        console.log('calling');<br>
+                                        const result = await resolveAfter2Seconds();<br>
+                                        console.log(result);<br>
+                                        // expected output: "resolved"<br>
+                                    }<br>
+                                    <br>
+                                    asyncCall();  <br>                        
+                                </code>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </section>
@@ -57,45 +65,41 @@
                             enclosed in parentheses and separated by semicolons, followed by a statement
                             (usually a block statement) to be executed in the loop.
                         </p>
-                        <p>
-                            <ul>
-                                <li>
-                                    <h5>Sample Code:</h5>
-                                    <code class='code-block'>
-                                        let str = '';<br>
-                                        <br>
-                                        for (let i = 0; i < 9; i++) {<br>
-                                        str = str + i;<br>
-                                        }<br>
-                                        <br>
-                                        console.log(str);<br>
-                                        // expected output: "012345678"<br>
-                                    </code>
-                                </li>
-                            </ul>
-                        </p>
+                        <ul>
+                            <li>
+                                <h5>Sample Code:</h5>
+                                <code class='code-block'>
+                                    let str = '';<br>
+                                    <br>
+                                    for (let i = 0; i < 9; i++) {<br>
+                                    str = str + i;<br>
+                                    }<br>
+                                    <br>
+                                    console.log(str);<br>
+                                    // expected output: "012345678"<br>
+                                </code>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <h4>ForEach Statements</h4>
                         <p>
                             The <code>forEach()</code> method executes a provided function once for each array element.
                         </p>
-                        <p>
-                            <ul>
-                                <li>
-                                    <h5>Sample Code:</h5>
-                                    <code class='code-block'>
-                                        const array1 = ['a', 'b', 'c'];<br>
-                                        <br>
-                                        array1.forEach(element => console.log(element));<br>
-                                        <br>
-                                        // expected output: "a"<br>
-                                        // expected output: "b"<br>
-                                        // expected output: "c"<br>
-                                    </code>
-                                </li>
-                            </ul>
-                        </p>
+                        <ul>
+                            <li>
+                                <h5>Sample Code:</h5>
+                                <code class='code-block'>
+                                    const array1 = ['a', 'b', 'c'];<br>
+                                    <br>
+                                    array1.forEach(element => console.log(element));<br>
+                                    <br>
+                                    // expected output: "a"<br>
+                                    // expected output: "b"<br>
+                                    // expected output: "c"<br>
+                                </code>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <h4>While Statements</h4>
@@ -103,23 +107,21 @@
                             The <code>while</code> statement creates a loop that executes a specified statement as long as the test
                             condition evaluates to true. The condition is evaluated before executing the statement.
                         </p>
-                        <p>
-                            <ul>
-                                <li>
-                                    <h5>Sample Code:</h5>
-                                    <code class='code-block'>
-                                        let n = 0;<br>
-                                        <br>
-                                        while (n < 3) {<br>
-                                        n++;<br>
-                                        }<br>
-                                        <br>
-                                        console.log(n);<br>
-                                        // expected output: 3<br>
-                                    </code>
-                                </li>
-                            </ul>
-                        </p>
+                        <ul>
+                            <li>
+                                <h5>Sample Code:</h5>
+                                <code class='code-block'>
+                                    let n = 0;<br>
+                                    <br>
+                                    while (n < 3) {<br>
+                                    n++;<br>
+                                    }<br>
+                                    <br>
+                                    console.log(n);<br>
+                                    // expected output: 3<br>
+                                </code>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <h4>Do...While Statements</h4>
@@ -128,25 +130,23 @@
                             condition evaluates to false. The condition is evaluated after executing the statement,
                             resulting in the specified statement executing at least once.
                         </p>
-                        <p>
-                            <ul>
-                                <li>
-                                    <h5>Sample Code</h5>
-                                    <code class='code-block'>
-                                        let result = '';<br>
-                                        let i = 0;<br>
-                                        <br>
-                                        do {<br>
-                                        i = i + 1;<br>
-                                        result = result + i;<br>
-                                        } while (i < 5);<br>
-                                        <br>
-                                        console.log(result);<br>
-                                        // expected result: "12345"<br>
-                                    </code>
-                                </li>
-                            </ul>
-                        </p>
+                        <ul>
+                            <li>
+                                <h5>Sample Code</h5>
+                                <code class='code-block'>
+                                    let result = '';<br>
+                                    let i = 0;<br>
+                                    <br>
+                                    do {<br>
+                                    i = i + 1;<br>
+                                    result = result + i;<br>
+                                    } while (i < 5);<br>
+                                    <br>
+                                    console.log(result);<br>
+                                    // expected result: "12345"<br>
+                                </code>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <h4>For...In Statements</h4>
@@ -159,23 +159,21 @@
                             It then iterates over all the object's properties and returns a string that lists the property names
                             and their values.
                         </p>
-                        <p>
-                            <ul>
-                                <li>
-                                    <h5>Sample Code:</h5>
-                                    <code class='code-block'>
-                                        function dump_props(obj, obj_name) {<br>
-                                            let result = '';<br>
-                                            for (let i in obj) {<br>
-                                              result += obj_name + '.' + i + ' = ' + obj[i] + '&lt;br&gt;';<br>
-                                            }<br>
-                                            result += '&lt;hr&gt;';<br>
-                                            return result;<br>
-                                          }<br>
-                                    </code>
-                                </li>
-                            </ul>
-                        </p>
+                        <ul>
+                            <li>
+                                <h5>Sample Code:</h5>
+                                <code class='code-block'>
+                                    function dump_props(obj, obj_name) {<br>
+                                        let result = '';<br>
+                                        for (let i in obj) {<br>
+                                            result += obj_name + '.' + i + ' = ' + obj[i] + '&lt;br&gt;';<br>
+                                        }<br>
+                                        result += '&lt;hr&gt;';<br>
+                                        return result;<br>
+                                      }<br>
+                                </code>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <h4>For...Of Statements</h4>
@@ -190,25 +188,23 @@
                             loop. While <code>for...in</code> iterates over property names,
                             <code>for...of</code> iterates over property values:
                         </p>
-                        <p>
-                            <ul>
-                                <li>
-                                    <h5>Sample Code:</h5>
-                                    <code class='code-block'>
-                                        const arr = [3, 5, 7];<br>
-                                        arr.foo = 'hello';<br>
-                                        <br>
-                                        for (let i in arr) {<br>
-                                        console.log(i); // logs "0", "1", "2", "foo"<br>
-                                        }<br>
-                                        <br>
-                                        for (let i of arr) {<br>
-                                        console.log(i); // logs 3, 5, 7<br>
-                                        }<br>
-                                    </code>
-                                </li>
-                            </ul>
-                        </p>
+                        <ul>
+                            <li>
+                                <h5>Sample Code:</h5>
+                                <code class='code-block'>
+                                    const arr = [3, 5, 7];<br>
+                                    arr.foo = 'hello';<br>
+                                    <br>
+                                    for (let i in arr) {<br>
+                                    console.log(i); // logs "0", "1", "2", "foo"<br>
+                                    }<br>
+                                    <br>
+                                    for (let i of arr) {<br>
+                                    console.log(i); // logs 3, 5, 7<br>
+                                    }<br>
+                                </code>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </section>
@@ -222,56 +218,139 @@
                             enables storing a collection of multiple items under a single variable name,
                             and has members for performing common array operations.
                         </p>
-                        <p>
-                            <ul>
-                                <li>
-                                    <h5>Description</h5>
-                                    <p>
-                                        In JavaScript, arrays aren't primitives but are instead <code>Array</code> objects
-                                        with the following core characteristics:
-                                    </p>
-                                    <p>
-                                        <ul class='styled-list'>
-                                            <li>
-                                                JavaScript arrays are resizable and can contain a mix of different data types.
-                                                (When those characteristics are undesirable, use typed arrays instead.)
-                                            </li>
-                                            <li>
-                                                JavaScript arrays are not associative arrays and so, array elements cannot be
-                                                accessed using strings as indexes, but must be accessed using integers as indexes.
-                                            </li>
-                                            <li>
-                                                JavaScript arrays are zero-indexed: the first element of an array is at index 0,
-                                                the second is at index 1, and so on — and the last element is at the value of
-                                                the array's length property minus 1.
-                                            </li>
-                                            <li>
-                                                JavaScript array-copy operations create shallow copies.
-                                                (All standard built-in copy operations with any JavaScript objects create
-                                                shallow copies, rather than deep copies).
-                                            </li>
-                                        </ul>
-                                    </p>
-                                </li>
-                            </ul>
-                        </p>
+                        <ul>
+                            <li>
+                                <h5>Description</h5>
+                                <p>
+                                    In JavaScript, arrays aren't primitives but are instead <code>Array</code> objects
+                                    with the following core characteristics:
+                                </p>
+                                <ul class='styled-list'>
+                                    <li>
+                                        JavaScript arrays are resizable and can contain a mix of different data types.
+                                        (When those characteristics are undesirable, use typed arrays instead.)
+                                    </li>
+                                    <li>
+                                        JavaScript arrays are not associative arrays and so, array elements cannot be
+                                        accessed using strings as indexes, but must be accessed using integers as indexes.
+                                    </li>
+                                    <li>
+                                        JavaScript arrays are zero-indexed: the first element of an array is at index 0,
+                                        the second is at index 1, and so on — and the last element is at the value of
+                                        the array's length property minus 1.
+                                    </li>
+                                    <li>
+                                        JavaScript array-copy operations create shallow copies.
+                                        (All standard built-in copy operations with any JavaScript objects create
+                                        shallow copies, rather than deep copies).
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </section>
             <section class='main-section' id='Objects'>
                 <header class='main-header'>Objects</header>
+                <ul>
+                    <li>
+                        <h4>Object Class</h4>
+                        <p>
+                            The <code>Object</code> class represents one of JavaScript's data types.
+                            It is used to store various keyed collections and more complex entities.
+                            Objects can be created using the <code>Object()</code> constructor
+                            or the object initializer / literal syntax.
+                        </p>
+                        <ul>
+                            <li>
+                                <h5>Description</h5>
+                                <p>
+                                    Nearly all objects in JavaScript are instances of <code>Object</code>;
+                                    a typical object inherits properties (including methods)
+                                    from <code>Object.prototype</code>, although these properties may be shadowed
+                                    (a.k.a. overridden). However, an <code>Object</code> may be deliberately created
+                                    for which this is not true (e.g. by <code>Object.create(null)</code>), or it may be altered
+                                    so that this is no longer true (e.g. with <code>Object.setPrototypeOf</code>).
+                                </p>
+                                <p>
+                                    Changes to the <code>Object</code> prototype object are seen by all objects
+                                    through prototype chaining, unless the properties and methods subject to
+                                    those changes are overridden further along the prototype chain.
+                                    This provides a very powerful although potentially dangerous mechanism
+                                    to override or extend object behavior.
+                                </p>
+                                <p>
+                                    The <code>Object</code> constructor creates an object wrapper for the given value.
+                                </p>
+                                <ul class='styled-list'>
+                                    <li>
+                                        If the value is <code>null</code> or <code>undefined</code>,
+                                        it will create and return an empty object.
+                                    </li>
+                                    <li>
+                                        If the value is an object already, it will return the value.
+                                    </li>
+                                    <li>
+                                        Otherwise, it will return an object of a Type that corresponds to the given value.
+                                    </li>
+                                </ul>
+                                <p>
+                                    When called in a non-constructor context, <code>Object</code> behaves identically
+                                    to <code>new Object()</code>.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </section>
             <section class='main-section' id='Strings'>
                 <header class='main-header'>Strings</header>
+                <ul>
+                    <li>
+                        <h4>String</h4>
+                        <p>
+                            The <code>String</code> object is used to represent and manipulate a sequence of characters.
+                        </p>
+                        <ul>
+                            <li>
+                                <h5>Description</h5>
+                                <p>
+                                    Strings are useful for holding data that can be represented in text form.
+                                    Some of the most-used operations on strings are to check their <code>length</code>,
+                                    to build and concatenate them using the + and += string operators,
+                                    checking for the existence or location of substrings with the <code>indexOf()</code> method,
+                                    or extracting substrings with the <code>substring()</code> method.
+                                </p>
+                            </li>
+                            <li>
+                                <h5>Creating Strings</h5>
+                                <p>
+                                    Strings can be created as primitives, from string literals, or as objects,
+                                    using the <code>String()</code> constructor:
+                                </p>
+                                <h5>Sample Code:</h5>
+                                <code class='code-block'>
+                                    const string1 = "A string primitive";<br>
+                                    const string2 = 'Also a string primitive';<br>
+                                    const string3 = `Yet another string primitive`;<br>
+                                </code>
+                                <h5>Sample Code:</h5>
+                                <code class='code-block'>
+                                    const string4 = new String("A String object");<br>
+                                </code>
+                                <p>
+                                    String primitives and string objects can be used interchangeably in most situations.
+                                </p>
+                                <p>
+                                    String literals can be specified using single or double quotes,
+                                    which are treated identically, or using the backtick character <code>`</code>.
+                                    This last form specifies a template literal: with this form you can interpolate expressions.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </section>
-            <nav id='navbar'>
-                <header id='nav-header'>JavaScript Concepts</header>
-                <a class='nav-link' href='#Asynchronous_JavaScript'>Asynchronous JavaScript</a>
-                <a class='nav-link' href='#Loops'>Loops</a>
-                <a class='nav-link' href='#Arrays'>Arrays</a>
-                <a class='nav-link' href='#Objects'>Objects</a>
-                <a class='nav-link' href='#Strings'>Strings</a>
-            </nav>
         </main>
 
 
