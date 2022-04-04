@@ -10,6 +10,7 @@
     font-size: 25pt;
 }
 .main-section {
+    word-wrap: break-word;
     background-color: lightgrey;
     position: relative;
     width: 80%;
@@ -24,7 +25,7 @@
 #Asynchronous_JavaScript {
     margin-top: 0px;
 }
-#Strings {
+#Reference {
     margin-bottom: 0px;
 }
 h4{
